@@ -1,5 +1,5 @@
 ---
-title: Series of Short Stories
+title: Series of Short Stories - 1
 date: 2024-11-12 14:50:33
 tags: hozi
 ---
