@@ -29,7 +29,7 @@ defaults:
   # Site logo
   logo: /images/Logo.png
   # Site avatar
-  avatar: /images/avatar.png
+  avatar: https://i.afbcs.cn/miELJD
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
