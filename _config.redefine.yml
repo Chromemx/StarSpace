@@ -27,7 +27,7 @@ defaults:
   # Favicon
   favicon: /images/SiteLogo.ico
   # Site logo
-  logo: /images/Logo.png
+  logo: https://i.afbcs.cn/ppABpQ
   # Site avatar
   avatar: https://i.afbcs.cn/miELJD
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
