@@ -122,13 +122,13 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: https://aomaterial.com/wp-content/uploads/2023/08/57ac1a1ea5b47278da30911ad85ecb7d-1024x576.png # light mode
-    dark: https://aomaterial.com/wp-content/uploads/2023/08/e18c68a594c9fcf6c55606c74e76cab4-1024x576.png # dark mode
+    light: /images/wallhaven-wqery6-light.webp # light mode
+    dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: StarSpace In April
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ["aaa","bbb","ccc"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
