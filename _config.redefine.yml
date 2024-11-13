@@ -25,7 +25,7 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/logo.png
+  favicon: /images/Ho&Woo.ico
   # Site logo
   logo: /images/logo.png
   # Site avatar
