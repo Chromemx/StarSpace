@@ -128,7 +128,7 @@ home_banner:
   title: StarSpace In April
   # Home banner subtitle
   subtitle:
-    text: ["aaa","bbb","ccc"] # subtitle text, array
+    text: ["Two captains","We are gonna lead more more more"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
