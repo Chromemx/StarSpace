@@ -13,7 +13,7 @@ info:
   # Site title
   title: StarSpace In April
   # Site subtitle
-  subtitle: Star your journey from here.
+  subtitle: Start your journey from here.
   # Author name
   author: Asachimx
   # Site URL
@@ -125,7 +125,7 @@ home_banner:
     light: /images/background-light.png # light mode
     dark: /images/background-dark.png # dark mode
   # Home banner title
-  title: StarSpace
+  title: StarSpace In April
   # Home banner subtitle
   subtitle:
     text: ["Two captains","We’re gonna lead more more more"] # subtitle text, array
