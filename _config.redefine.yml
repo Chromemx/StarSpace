@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/SiteLogo.ico
+  favicon: images/SiteLogo.ico
   # Site logo
-  logo: /images/Logo.png
+  logo: images/Logo.png
   # Site avatar
-  avatar: /images/Avatar.png
+  avatar: images/Avatar.png
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -199,14 +199,14 @@ navbar:
     Home: 
       path: https://chromemx.github.io/StarSpace/
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
-    # Status: 
-    #   path: https://status.ohevan.com/
-    #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
+    Archives: 
+      path: /archives 
+      icon: fa-regular fa-archive # can be empty
+    Status: 
+      path: https://status.ohevan.com/
+      icon: fa-regular fa-chart-bar
+    About: 
+      icon: fa-regular fa-user
     #   submenus:
     #     Me: /about
     #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
