@@ -1,7 +1,8 @@
 ---
-title: Series of Short Stories - 1
-date: 2024-11-12 14:50:33
+title: Eyes on you
+date: 2024-11-03 14:50:33
 tags: hozi
+categories: first - person point of view
 ---
 
 ### 再会
