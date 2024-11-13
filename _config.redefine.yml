@@ -127,7 +127,7 @@ home_banner:
   # Home banner title
   title: StarSpace In April
   # Home banner subtitle
-  subtitle: 
+  subtitle:
     text: ["aaa","bbb","ccc"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: true # Whether to enable hitokoto
