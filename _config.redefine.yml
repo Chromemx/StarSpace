@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: /source/images/SiteLogo.ico
   # Site logo
-  logo: 
+  logo: /source/images/Logo.png
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: /source/images/Avatar.png
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -122,8 +122,8 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: /images/wallhaven-wqery6-light.webp # light mode
-    dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    light: /source/images/background-light.png # light mode
+    dark: /source/images/background-dark.png # dark mode
   # Home banner title
   title: StarSpace In April
   # Home banner subtitle
