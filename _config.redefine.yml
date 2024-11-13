@@ -122,8 +122,8 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: /images/background-light.png # light mode
-    dark: /images/background-dark.png # dark mode
+    light: /themes/images/background-light.png # light mode
+    dark: /themes/images/background-dark.png # dark mode
   # Home banner title
   title: StarSpace In April
   # Home banner subtitle
