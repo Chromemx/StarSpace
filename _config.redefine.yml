@@ -142,7 +142,7 @@ home_banner:
   # Color of home banner text
   text_color: 
     light: "#fff" # light mode
-    dark: "#fad107" # dark mode
+    dark: "#f5dd64" # dark mode
   # Specific style of the text
   text_style: 
     # Title font size
