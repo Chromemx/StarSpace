@@ -11,7 +11,7 @@ categories: repository
  
  从伪春菜吧找到伺か的汉化论坛，发现时间久远，教程等几乎都无法使用，只能去伺か官方查资料看教程，下载ghost模板翻大量现存成品的READ ME
 
-{% note-large cyan "fa-sharp-duotone fa-solid fa-question 伺かとは %}
+{% note-large cyan fa-sharp-duotone fa-solid fa-question 伺かとは %}
  
 もとは2000年初期に発足した「デスクトップマスコット」ソフトの一種。
 「デスクトップマスコット」とは、
