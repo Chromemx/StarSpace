@@ -6,22 +6,3 @@ categories: repository
 ---
 
 ### 记录一下各阶段进展
-
-
-{% notel default fa-info 信息 %}
-换行测试
-换行测试
-换行测试
-{% endnotel %}
- 
-{% notel blue 提示 %}
-换行测试
-换行测试
-换行测试
-{% endnotel %}
- 
-{% notel red 自定义标题 %}
-换行测试
-换行测试
-换行测试
-{% endnotel %}
