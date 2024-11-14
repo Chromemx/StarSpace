@@ -1,5 +1,6 @@
 ---
-title: article
-date: 2024-11-14 10:00:10
-tags:
+title: 【小杂物】伺か制作笔记
+date: 2024-10-24 13:50:43
+tags: 杂物
+categories: repository
 ---
