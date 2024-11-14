@@ -11,7 +11,7 @@ categories: repository
  
  从伪春菜吧找到伺か的汉化论坛，发现时间久远，教程等几乎都无法使用，只能去伺か官方查资料看教程，下载ghost模板翻大量现存成品的READ ME
 
- {% notel red "fa-sharp-duotone fa-solid fa-question 伺かとは %}
+{% notel cyan "fa-sharp-duotone fa-solid fa-question 伺かとは %}
  
   もとは2000年初期に発足した「デスクトップマスコット」ソフトの一種。
  「デスクトップマスコット」とは、
@@ -21,10 +21,27 @@ categories: repository
   デスクトップにかわいいキャラクターがいて好きに動いて喋っているだけでも、
   一部の人間にとっては十分役に立っているとも言える。
    (引用：伺かとは (ウカガカとは) [単語記事] - ニコニコ大百科 (https://dic.nicovideo.jp/a/%E4%BC%BA%E3%81%8B)
-
- {% endnotel %}
+{% endnotel %}
  
   简单概括为，可以放置在桌面上的多功能小程序（多以可爱形象出现）
+
+{% notel default fa-info 信息 %}
+换行测试
+换行测试
+换行测试
+{% endnotel %}
+ 
+{% notel blue 提示 %}
+换行测试
+换行测试
+换行测试
+{% endnotel %}
+ 
+{% notel red 自定义标题 %}
+换行测试
+换行测试
+换行测试
+{% endnotel %}
 
 
 
