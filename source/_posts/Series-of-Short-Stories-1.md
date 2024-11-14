@@ -1,5 +1,5 @@
 ---
-title: 随笔
+title: 【hozi】随笔
 date: 2024-05-30 15:06:47
 tags: hozi
 categories: third - person point of view
