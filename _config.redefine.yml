@@ -431,25 +431,21 @@ plugins:
               artist: John Lennon # audio artist
               url: https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3 # audio url
               cover: https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg # audio cover
-            - name: Something Just Like This
-              artist: Coldplay
-              url: https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3
-              cover: https://evan.beee.top/music/covers/Something_Just_Like_This.png
             - name: 9-TEEN
               artist: SEVENTEEN
-              url:  9-TEEN.mp3
-              cover: 9-TEEN.png
+              url: 9-TEEN.mp3
+              cover: 9TEEN.png
             - name: Spider
               artist: HOSHI
-              url:  Spider.mp3
+              url: Spider.mp3
               cover: Spider.png
             - name: Bring it
               artist: HOSHI WOOZI
-              url:  BRING IT.mp3
-              cover: Bring _it.png
+              url: BRING IT.mp3
+              cover: Bring_it.png
             - name: Ruby
               artist: WOOZI
-              url:  Ruby.mp3
+              url: Ruby.mp3
               cover: Ruby.png
             
 #        lrc: # audio cover lrc
