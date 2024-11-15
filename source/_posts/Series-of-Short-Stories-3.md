@@ -1,6 +1,6 @@
 ---
 title: 【hozi】Fate
-date: 2024-11-15 15:26:28
+date: 2024-1-7 15:26:28
 tags: hozi
 categories: third - person point of view
 ---
