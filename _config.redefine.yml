@@ -438,15 +438,20 @@ plugins:
             - name: 9-TEEN
               artist: SEVENTEEN
               url:  9-TEEN.mp3
-              cover: /images/cover/9-TEEN.png
+              cover: 9-TEEN.png
             - name: Spider
               artist: HOSHI
-              url:  /Spider.mp3
+              url:  Spider.mp3
               cover: Spider.png
             - name: Bring it
               artist: HOSHI WOOZI
-              url:  /music/BRING IT.mp3
-              cover: /images/cover/9-TEEN.png
+              url:  BRING IT.mp3
+              cover: Bring _it.png
+            - name: Ruby
+              artist: WOOZI
+              url:  Ruby.mp3
+              cover: Ruby.png
+            
 #        lrc: # audio cover lrc
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
