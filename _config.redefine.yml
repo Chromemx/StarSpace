@@ -437,7 +437,7 @@ plugins:
               cover: https://evan.beee.top/music/covers/Something_Just_Like_This.png
             - name: 9-TEEN
               artist: SEVENTEEN
-              url:  /music/9-TEEN.mp3
+              url:  9-TEEN.mp3
               cover: /images/cover/9-TEEN.png
 #        lrc: # audio cover lrc
       # .... you can add more audios here
