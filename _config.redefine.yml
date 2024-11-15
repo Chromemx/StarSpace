@@ -431,18 +431,22 @@ plugins:
               artist: HOSHI WOOZI
               url: BRING IT.mp3
               cover: Bring_it.png
+              lrc: Bring_it.lrc
             - name: Spider
               artist: HOSHI
               url: Spider.mp3
               cover: Spider.png
+              lrc: Spider.lrc
             - name: Ruby
               artist: WOOZI
               url: Ruby.mp3
               cover: Ruby.png
+              lrc: Ruby.lrc
             - name: 9-TEEN
               artist: SEVENTEEN
               url: 9-TEEN.mp3
               cover: 9TEEN.png
+              lrc: 9TEEN.lrc
             
 #        lrc: # audio cover lrc
       # .... you can add more audios here
