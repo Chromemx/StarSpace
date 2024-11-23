@@ -15,7 +15,7 @@ categories: Neta
 
 {% endnotel %}
 
-{% notel red fa-solid fa-heart 李知勋 %}
+{% notel red fa-heart 李知勋 %}
  职业：职业……黑道？
  其他：火拼的时候遇上权顺荣，笨蛋一样不管不顾干了一通弄
  了一身伤，带回去治好就被缠上了。和其他手下一样养着当做
