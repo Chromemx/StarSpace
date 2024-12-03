@@ -1,0 +1,10 @@
+- links_category: 其他
+  has_thumbnail: 
+  list:
+      - name: 盒子
+        link: ./Yummyyummy/index.html
+        description: 如果你想吃点什么的话
+        avatar: 头像
+        thumbnail: 预览图（has_thumbnail 为 true 时才需要）
+ 
+- ......

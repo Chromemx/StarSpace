@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>SVT-吃点好的</title>
+<script>
+  
+  function startLeftSlideShow() {
+    startSlideShow("tdsvt");
+}
+
+  function stopLeftSlideShow() {
+    stopSlideShow("tdsvt");
+}
+  
+    var leftpic_src=new Array("./prof/scoups.jpg","./prof/jeonghan.jpg","./prof/joshua.jpg","./prof/jun.jpg","./prof/hoshi.jpg","./prof/wonwoo.jpg","./prof/woozi.jpg","./prof/the8.jpg","./prof/mingyu.jpg","./prof/dk.jpg","./prof/seungkwan.jpg","./prof/vernon.jpg","./prof/dino.jpg");
+    var num=0;
+    var leftflag=true;
+
+    function leftSlideShow(){
+    
+    if(!leftflag){
+    return;
+    }
+    
+     var index=num%leftpic_src.length
+ 
+     var e=document.getElementById("tdsvt");
+ 
+     e.src=leftpic_src[index];
+ 
+     num++;
+ 
+     setTimeout("leftSlideShow()",30);
+   
+   }
+
+    
+    
+  function startLeftSlideShow(){
+   leftflag=true;
+   var element=document.getElementById("startleft");
+   element.disabled=true;
+   leftSlideShow();
+ 
+  }
+
+   function stopLeftSlideShow(){
+    var element=document.getElementById("startleft");
+    element.disabled=false;
+    leftflag=false;
+   }
+   
+   input{
+   
+   outline-style: none;
+   border: 3px;
+   border-radius: 3px;
+   
+   }
+   
+
+</script>
+
+
+
+<script>
+
+    function startRightSlideShow() {
+    startSlideShow("tdsvt1");
+}
+
+function stopRightSlideShow() {
+    stopSlideShow("tdsvt1");
+}
+
+  var rightpic_src=new Array("./prof/scoups.jpg","./prof/jeonghan.jpg","./prof/joshua.jpg","./prof/jun.jpg","./prof/hoshi.jpg","./prof/wonwoo.jpg","./prof/woozi.jpg","./prof/the8.jpg","./prof/mingyu.jpg","./prof/dk.jpg","./prof/seungkwan.jpg","./prof/vernon.jpg","./prof/dino.jpg");
+  var numRight=0;
+  var flag=true;
+
+    function slideshow(){
+    
+    if(!flag){
+    return;
+    }
+    
+     var index=numRight%rightpic_src.length
+ 
+     var e=document.getElementById("tdsvt1");
+ 
+     e.src=rightpic_src[index];
+ 
+     numRight++;
+ 
+     setTimeout("slideshow()",30);
+   
+   }
+
+    
+    
+  function startRightSlideShow(){
+   flag=true;
+   var element=document.getElementById("startright");
+   element.disabled=true;
+   slideshow();
+ 
+  }
+
+   function stopRightSlideShow(){
+    var element=document.getElementById("startright");
+    element.disabled=false;
+    flag=false;
+   }
+   
+   </script>
+   
+   <style>
+   
+   body{
+   
+     text-align:center;
+   
+   }
+   
+   </style>
+
+   <script>
+
+      var word=new Array(
+        "花吐き病","記憶喪失で片方のことを忘れる","幼馴染","ソウルメイト","相方の一人が死んだ",
+        "ケモ化","学園","吸血鬼","妖怪","オメガバース","異世界に行く","年齢操作","大学生",
+        "他作品クロスオーバー","カフェ","飲み会","肝試し","分裂","お互いの存在を意識し始める",
+        "すれちがい両片思い","片方が行方不明","片方の忘れ形見を育てる","ほのぼの日常デート","ルームシェア",
+        "入れ替わり","追われる片方を匿う","付き合うまで","手紙を書く","片方を救うために時を駆ける","二人で旅をする",
+        "別れ話","初夜","雨に降られて","初夜失敗からのリベンジ","閉じ込められる",
+        "一緒にご飯を作る","生存if","クールな彼の笑顔が見たい","呪いをかけられる",
+        "ユーチューバーになる","温泉へ行く","無自覚片思い","写真を撮る","復縁","催眠術をかける",
+        "独占欲","自由"
+       );
+
+      var num=0;
+
+    function setValue(){
+
+    var index=Math.floor(Math.random()*word.length);
+    var element=document.getElementById("neta");
+    element.value=word[index];
+
+    num++;
+    }
+
+   </script>
+   
+   </head>
+   
+   <body>
+   
+    <h1>Left</h1>
+    <img id="tdsvt" src="./prof/scoups.jpg" width="300px" height="300px"></img>
+         <br/>
+         <br/>
+         <button id="startleft" onclick="startLeftSlideShow()">Start</button>
+         <button onclick="stopLeftSlideShow()">Stop</button>
+         
+         <br/>
+         <br/>
+         <br/>
+     <h1>Right</h1>
+    <img id="tdsvt1" src="./prof/scoups.jpg" width="300px" height="300px"></img>
+         <br/>
+         <br/>
+         <button id="startright" onclick="startRightSlideShow()">Start</button>
+         <button onclick="stopRightSlideShow()">Stop</button>
+
+         <br/>
+         <br/>
+
+         <input type="text" id="neta"></input>
+         <button onclick="setValue()">願う</button>
+
+         <br/>
+         <br/>
+
+
+         <font style="color: cornflowerblue; font-size: larger;background-color: aliceblue;">今日はこれを食べますーーー</font>
+
+
+  </body>
+
+</html>
+   
+   

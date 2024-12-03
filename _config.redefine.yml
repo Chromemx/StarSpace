@@ -91,7 +91,11 @@ global:
     enable: false
     custom_message: # Custom message. If empty, the site title will be displayed
   # Whether to enable open graph
-  open_graph: true
+  global:
+    open_graph: 
+     enable: true
+     image: your_image_path
+     description: your_description
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
@@ -162,16 +166,12 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: false
+    enable: true
     # Social links style
     style: default # default, reverse, center
     # Social links
     links:
-      github:  # your GitHub URL
-      instagram: # your Instagram URL
-      zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
-      email:  # your email
+      YummyYummy: ./YummyYummy/index.html
       # ...... # you can add more
     # Social links with QRcode drawers
     qrs:
@@ -212,10 +212,10 @@ navbar:
     #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
     #     Blog: https://ohevan.com
     #     Friends: /friends
-    # Links: 
-    #   icon: fa-regular fa-link
-    #   submenus:
-    #     Link1: /link1
+    Links: 
+      icon: fa-regular fa-link
+      submenus:
+        今日运势: /YummyYummy/justforfun.html
     #     Link2: /link2
     #     Link3: /link3
     # ...... # you can add more
