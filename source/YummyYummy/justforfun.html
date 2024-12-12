@@ -1,190 +1,148 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>SVT-吃点好的</title>
-<script>
-  
-  function startLeftSlideShow() {
-    startSlideShow("tdsvt");
-}
+    <meta charset="UTF-8">
+    <title>SVT-吃点好的</title>
+    <script>
+        var leftpic_src = new Array(
+            "./prof/scoups.jpg", "./prof/jeonghan.jpg", "./prof/joshua.jpg",
+            "./prof/jun.jpg", "./prof/hoshi.jpg", "./prof/wonwoo.jpg", 
+            "./prof/woozi.jpg", "./prof/the8.jpg", "./prof/mingyu.jpg", 
+            "./prof/dk.jpg", "./prof/seungkwan.jpg", "./prof/vernon.jpg", 
+            "./prof/dino.jpg"
+        );
+        var num = 0;
+        var leftflag = true;  // 控制幻灯片是否播放
 
-  function stopLeftSlideShow() {
-    stopSlideShow("tdsvt");
-}
-  
-    var leftpic_src=new Array("./prof/scoups.jpg","./prof/jeonghan.jpg","./prof/joshua.jpg","./prof/jun.jpg","./prof/hoshi.jpg","./prof/wonwoo.jpg","./prof/woozi.jpg","./prof/the8.jpg","./prof/mingyu.jpg","./prof/dk.jpg","./prof/seungkwan.jpg","./prof/vernon.jpg","./prof/dino.jpg");
-    var num=0;
-    var leftflag=true;
+        // 幻灯片切换的核心函数
+        function leftSlideShow() {
+            if (!leftflag) {
+                return;  // 如果 leftflag 为 false，则停止幻灯片
+            }
 
-    function leftSlideShow(){
-    
-    if(!leftflag){
-    return;
-    }
-    
-     var index=num%leftpic_src.length
- 
-     var e=document.getElementById("tdsvt");
- 
-     e.src=leftpic_src[index];
- 
-     num++;
- 
-     setTimeout("leftSlideShow()",30);
-   
-   }
+            var index = num % leftpic_src.length;  // 计算当前显示的图片索引
+            var e = document.getElementById("tdsvt");
+            e.src = leftpic_src[index];  // 更新图片的 src
 
-    
-    
-  function startLeftSlideShow(){
-   leftflag=true;
-   var element=document.getElementById("startleft");
-   element.disabled=true;
-   leftSlideShow();
- 
-  }
+            num++;  // 更新图片索引
+            setTimeout(leftSlideShow, 30);  // 30毫秒后继续调用自己
+        }
 
-   function stopLeftSlideShow(){
-    var element=document.getElementById("startleft");
-    element.disabled=false;
-    leftflag=false;
-   }
-   
-   input{
-   
-   outline-style: none;
-   border: 3px;
-   border-radius: 3px;
-   
-   }
-   
+        // 启动左边幻灯片的函数
+        function startLeftSlideShow() {
+            leftflag = true;  // 设置 leftflag 为 true，允许幻灯片播放
+            var element = document.getElementById("startleft");
+            element.disabled = true;  // 禁用“开始”按钮，防止多次点击
+            leftSlideShow();  // 启动幻灯片
+        }
 
-</script>
+        // 停止左边幻灯片的函数
+        function stopLeftSlideShow() {
+            var element = document.getElementById("startleft");
+            element.disabled = false;  // 启用“开始”按钮
+            leftflag = false;  // 设置 leftflag 为 false，停止幻灯片
+        }
 
+        // 右边幻灯片的控制函数（与左边的类似）
+        var rightpic_src = new Array(
+            "./prof/scoups.jpg", "./prof/jeonghan.jpg", "./prof/joshua.jpg",
+            "./prof/jun.jpg", "./prof/hoshi.jpg", "./prof/wonwoo.jpg", 
+            "./prof/woozi.jpg", "./prof/the8.jpg", "./prof/mingyu.jpg", 
+            "./prof/dk.jpg", "./prof/seungkwan.jpg", "./prof/vernon.jpg", 
+            "./prof/dino.jpg"
+        );
+        var numRight = 0;
+        var flag = true;  // 控制右边幻灯片是否播放
 
+        function slideshow() {
+            if (!flag) {
+                return;  // 如果 flag 为 false，则停止幻灯片
+            }
 
-<script>
+            var index = numRight % rightpic_src.length;  // 计算当前显示的图片索引
+            var e = document.getElementById("tdsvt1");
+            e.src = rightpic_src[index];  // 更新图片的 src
 
-    function startRightSlideShow() {
-    startSlideShow("tdsvt1");
-}
+            numRight++;  // 更新图片索引
+            setTimeout(slideshow, 30);  // 30毫秒后继续调用自己
+        }
 
-function stopRightSlideShow() {
-    stopSlideShow("tdsvt1");
-}
+        // 启动右边幻灯片的函数
+        function startRightSlideShow() {
+            flag = true;  // 设置 flag 为 true，允许幻灯片播放
+            var element = document.getElementById("startright");
+            element.disabled = true;  // 禁用“开始”按钮，防止多次点击
+            slideshow();  // 启动幻灯片
+        }
 
-  var rightpic_src=new Array("./prof/scoups.jpg","./prof/jeonghan.jpg","./prof/joshua.jpg","./prof/jun.jpg","./prof/hoshi.jpg","./prof/wonwoo.jpg","./prof/woozi.jpg","./prof/the8.jpg","./prof/mingyu.jpg","./prof/dk.jpg","./prof/seungkwan.jpg","./prof/vernon.jpg","./prof/dino.jpg");
-  var numRight=0;
-  var flag=true;
+        // 停止右边幻灯片的函数
+        function stopRightSlideShow() {
+            var element = document.getElementById("startright");
+            element.disabled = false;  // 启用“开始”按钮
+            flag = false;  // 设置 flag 为 false，停止幻灯片
+        }
 
-    function slideshow(){
-    
-    if(!flag){
-    return;
-    }
-    
-     var index=numRight%rightpic_src.length
- 
-     var e=document.getElementById("tdsvt1");
- 
-     e.src=rightpic_src[index];
- 
-     numRight++;
- 
-     setTimeout("slideshow()",30);
-   
-   }
+        // 随机生成“许愿”文本的函数
+        var word = new Array(
+            "花吐症", "失忆忘记另一方", "青梅竹马", "Soulmate", "其中一方死亡",
+            "动物化", "学校", "吸血鬼", "妖怪", "ABO", "转生在异世界", "年龄差", 
+            "大学生", "其他作品的世界观", "咖啡店", "聚会", "试胆大会", 
+            "关系破裂", "开始意识到对方的存在", "互相错过的双向单恋", "一方行踪不明",
+            "抚养一方留下的遗物（活物）", "平和的日常约会", "共享房间", "灵魂互换",
+            "保护被追击的一方", "交往之前", "手写信", "为了拯救对方穿越时间",
+            "双人旅行", "分别的话", "初夜", "雨天", "初夜失败的复仇", "监禁",
+            "一起做饭", "生存if", "看冷脸的一方的笑容", "被诅咒", "成为主播",
+            "去温泉", "没有察觉的单恋", "拍照", "和好", "催眠", "独占欲", "自由"
+        );
 
-    
-    
-  function startRightSlideShow(){
-   flag=true;
-   var element=document.getElementById("startright");
-   element.disabled=true;
-   slideshow();
- 
-  }
+        // 设置随机“许愿”文本的函数
+        function setValue() {
+            var index = Math.floor(Math.random() * word.length);  // 随机选择一个文本
+            var element = document.getElementById("neta");
+            element.value = word[index];  // 显示在文本框中
+        }
+    </script>
 
-   function stopRightSlideShow(){
-    var element=document.getElementById("startright");
-    element.disabled=false;
-    flag=false;
-   }
-   
-   </script>
-   
-   <style>
-   
-   body{
-   
-     text-align:center;
-   
-   }
-   
-   </style>
+    <style>
+        body {
+            text-align: center;
+        }
+        input {
+            outline-style: none;
+            border: 3px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
 
-   <script>
+<body>
 
-      var word=new Array(
-        "花吐症","失忆忘记另一方","青梅竹马","Soulmate","其中一方死亡",
-        "动物化","学校","吸血鬼","妖怪","ABO","转生在异世界","年龄差","大学生",
-        "其他作品的世界观","咖啡店","聚会","试胆大会","关系破裂","开始意识到对方的存在",
-        "互相错过的双向单恋","一方行踪不明","抚养一方留下的遗物（活物）","平和的日常约会","共享房间",
-        "灵魂互换","保护被追击的一方","交往之前","手写信","为了拯救对方穿越时间","双人旅行",
-        "分别的话","初夜","雨天","初夜失败的复仇","监禁",
-        "一起做饭","生存if","看冷脸的一方的笑容","被诅咒",
-        "成为主播","去温泉","没有察觉的单恋","拍照","和好","催眠",
-        "独占欲","自由"
-       );
-
-      var num=0;
-
-    function setValue(){
-
-    var index=Math.floor(Math.random()*word.length);
-    var element=document.getElementById("neta");
-    element.value=word[index];
-
-    num++;
-    }
-
-   </script>
-   
-   </head>
-   
-   <body>
-   
     <h1>Left</h1>
-    <img id="tdsvt" src="./prof/scoups.jpg" width="300px" height="300px"></img>
-         <br/>
-         <br/>
-         <button id="startleft" onclick="startLeftSlideShow()">Start</button>
-         <button onclick="stopLeftSlideShow()">Stop</button>
-         
-         <br/>
-         <br/>
-         <br/>
-     <h1>Right</h1>
-    <img id="tdsvt1" src="./prof/scoups.jpg" width="300px" height="300px"></img>
-         <br/>
-         <br/>
-         <button id="startright" onclick="startRightSlideShow()">Start</button>
-         <button onclick="stopRightSlideShow()">Stop</button>
+    <img id="tdsvt" src="./prof/scoups.jpg" width="300px" height="300px" />
+    <br />
+    <br />
+    <button id="startleft" onclick="startLeftSlideShow()">Start</button>
+    <button onclick="stopLeftSlideShow()">Stop</button>
 
-         <br/>
-         <br/>
+    <br />
+    <br />
+    <br />
+    <h1>Right</h1>
+    <img id="tdsvt1" src="./prof/scoups.jpg" width="300px" height="300px" />
+    <br />
+    <br />
+    <button id="startright" onclick="startRightSlideShow()">Start</button>
+    <button onclick="stopRightSlideShow()">Stop</button>
 
-         <input type="text" id="neta"></input>
-         <button onclick="setValue()">许愿</button>
+    <br />
+    <br />
+    <input type="text" id="neta" />
+    <button onclick="setValue()">许愿</button>
 
-         <br/>
-         <br/>
+    <br />
+    <br />
 
+    <font style="color: cornflowerblue; font-size: larger; background-color: aliceblue;">今天决定吃这个！</font>
 
-         <font style="color: cornflowerblue; font-size: larger;background-color: aliceblue;">今天决定吃这个！</font>
-
-
-  </body>
-
+</body>
 </html>
-   
-   
