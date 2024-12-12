@@ -3,6 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>SVT-吃点好的</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        /* 创建一个 Flex 容器使得两个幻灯片水平排列 */
+        .slideshow-container {
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: center; /* 将内容水平居中 */
+            align-items: center; /* 将内容垂直居中 */
+            gap: 50px; /* 设置图片之间的间距 */
+        }
+
+        /* 设置幻灯片图片的样式 */
+        .slideshow-container img {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* 按钮的样式 */
+        .btn {
+    position: relative;
+    min-width: 160px;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+.btn span {
+    color: #FFFFFF;
+    mix-blend-mode: difference;
+}
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52px;
+    height: 100%;
+    border-radius: 50px;
+    background: black;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn:hover:before {
+  background: black;
+  width: 100%;
+}
+
+        input {
+            outline-style: none;
+            border: 3px;
+            border-radius: 3px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* 整体的页面样式 */
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* 为左右两边幻灯片的标题添加样式 */
+        .slideshow-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .wish-container {
+            margin-top: 20px;
+        }
+
+        /* 使按钮与输入框在页面中居中 */
+        .wish-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 垂直居中对齐 */
+            justify-content: center; /* 水平居中对齐 */
+            margin-top: 20px;
+        }
+
+    </style>
+
     <script>
         var leftpic_src = new Array(
             "./prof/scoups.jpg", "./prof/jeonghan.jpg", "./prof/joshua.jpg",
@@ -103,44 +190,37 @@
         }
     </script>
 
-    <style>
-        body {
-            text-align: center;
-        }
-        input {
-            outline-style: none;
-            border: 3px;
-            border-radius: 3px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <h1>Left</h1>
-    <img id="tdsvt" src="./prof/scoups.jpg" width="300px" height="300px" />
-    <br />
-    <br />
-    <button id="startleft" onclick="startLeftSlideShow()">Start</button>
-    <button onclick="stopLeftSlideShow()">Stop</button>
+    <h1>请做出你的选择</h1>
+    <div class="slideshow-container">
+        <!-- 左边幻灯片 -->
+        <div>
+            <h2>Left</h2>
+            <img id="tdsvt" src="./prof/scoups.jpg" />
+            <br />
+            <button id="startleft" onclick="startLeftSlideShow()">Start</button>
+            <button onclick="stopLeftSlideShow()">Stop</button>
+        </div>
 
-    <br />
-    <br />
-    <br />
-    <h1>Right</h1>
-    <img id="tdsvt1" src="./prof/scoups.jpg" width="300px" height="300px" />
-    <br />
-    <br />
-    <button id="startright" onclick="startRightSlideShow()">Start</button>
-    <button onclick="stopRightSlideShow()">Stop</button>
+        <!-- 右边幻灯片 -->
+        <div>
+            <h2>Right</h2>
+            <img id="tdsvt1" src="./prof/scoups.jpg" />
+            <br />
+            <button id="startright" onclick="startRightSlideShow()">Start</button>
+            <button onclick="stopRightSlideShow()">Stop</button>
+        </div>
+    </div>
 
-    <br />
-    <br />
-    <input type="text" id="neta" />
-    <button onclick="setValue()">许愿</button>
-
-    <br />
-    <br />
+    <div class="wish-container">
+        <!-- 许愿文本框和按钮 -->
+        <input type="text" id="neta" style="text-align: center;"/>
+        <dr/>
+        <button onclick="setValue()" class="btn"><span>许愿</span></button>
+    </div>
 
     <font style="color: cornflowerblue; font-size: larger; background-color: aliceblue;">今天决定吃这个！</font>
 
