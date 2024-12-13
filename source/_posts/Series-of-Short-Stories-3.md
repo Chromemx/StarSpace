@@ -2,7 +2,7 @@
 title: 【hozi】Fate
 date: 2024-1-7 15:26:28
 tags: hozi
-categories: third - person point of view
+categories: 文
 ---
 ### 这星 那星
 ##### 权顺荣视角

@@ -2,7 +2,7 @@
 title: 【hozi】距离感
 date: 2024-05-06 21:29:04
 tags: hozi
-categories: third - person point of view
+categories: 文
 ---
 
    回归之后的打歌舞台录制一个接一个。连平常体力比较好的成员也露出了疲惫的表情。
