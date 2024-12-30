@@ -3,7 +3,6 @@ title: 【梗】声控灯
 date: 2024-12-10 07:06:38
 tags: 梗
 categories: Neta
-cover: "./short-1/short-1.jpg"
 ---
  演唱会的繁忙加上日夜颠倒的行程，让每个疲惫的人都变得格外敏感。
  
