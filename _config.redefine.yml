@@ -432,6 +432,21 @@ plugins:
               url: BRING IT.mp3
               cover: Bring_it.png
               lrc: Bring_it.lrc
+            - name: ECHO
+              artist: HOSHI WOOZI
+              url: ECHO_ Prod. WOOZI_ - HxW.mp3
+              cover: ECHO_ Prod. WOOZI_ - HxW.png
+              lrc: 
+            - name: 96ers
+              artist: HOSHI WOOZI
+              url: 96ers - HxW.mp3
+              cover: 96ers - HxW.png
+              lrc: 
+            - name: STUPID IDIOT
+              artist: HOSHI WOOZI
+              url: STUPID IDIOT - HxW.mp3
+              cover: STUPID IDIOT - HxW.png
+              lrc: 
             - name: Spider
               artist: HOSHI
               url: Spider.mp3
