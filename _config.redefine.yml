@@ -15,7 +15,7 @@ info:
   # Site subtitle
   subtitle: Start your journey from here.
   # Author name
-  author: Asachimx
+  author: HoshimiAsachi
   # Site URL
   url: https://redefine.ohevan.com
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -447,6 +447,22 @@ plugins:
               url: 9-TEEN.mp3
               cover: 9TEEN.png
               lrc: 9TEEN.lrc
+            - name: What Kind Of Future
+              artist: WOOZI
+              url: What Kind Of Future.mp3
+              cover: What Kind Of Future.png
+            - name: STAY
+              artist: HOSHI
+              url: STAY.mp3
+              cover: STAY.png
+            - name: I Want You Back
+              artist: HOSHI
+              url: I Want You Back.mp3
+              cover: I Want You Back.png
+            - name: Miracle
+              artist: WOOZI
+              url: Miracle.mp3
+              
             
 #        lrc: # audio cover lrc
       # .... you can add more audios here
