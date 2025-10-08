@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>SVT-吃点好的</title>
     <style>
-        /* 设置body的样式，使页面内容居中 */
         body {
             display: flex;
             justify-content: center;  /* 水平居中 */
@@ -16,7 +15,6 @@
             background-image: url("./prof/background-dark.png");
         }
 
-        /* 创建一个 Flex 容器使得两个幻灯片水平排列 */
         .slideshow-container {
             display: flex; /* 使用 Flexbox 布局 */
             justify-content: center; /* 将内容水平居中 */
@@ -256,7 +254,7 @@
             flag = false;  // 设置 flag 为 false，停止幻灯片
         }
 
-        // 随机生成“许愿”文本的函数
+        // “许愿”文本的函数
         var word = new Array(
             "花吐症", "失忆忘记另一方", "青梅竹马", "Soulmate", "其中一方死亡",
             "动物化", "学校", "吸血鬼", "妖怪", "ABO", "转生在异世界", "年龄差", 
@@ -266,10 +264,15 @@
             "保护被追击的一方", "交往之前", "手写信", "为了拯救对方穿越时间",
             "双人旅行", "分别的话", "初夜", "雨天", "初夜失败的复仇", "监禁",
             "一起做饭", "生存if", "看冷脸的一方的笑容", "被诅咒", "成为主播",
-            "去温泉", "没有察觉的单恋", "拍照", "和好", "催眠", "独占欲", "自由"
+            "去温泉", "没有察觉的单恋", "拍照", "和好", "催眠", "独占欲", "自由","HP paro","警匪paro","只有○○才能出去的房间"
+            ,"舞台失误","不经意的对视","平行时空","互相交换一样能力","一方突然回到十年前","电影院"
+            ,"做对方不会做的事","游戏 paro","SF paro","警察 paro","黑帮 paro","办公室恋情","从未相爱过"
+            ,"失忆","妄想症","斯德哥尔摩","对手","刑侦 paro","混混 paro","一方为恶魔"
+            ,"时间循环","假戏真做","一方能看到鬼","一方重伤","哨兵和向导","炮友转正","破镜重圆"
+            ,"双生"
         );
 
-        // 设置随机“许愿”文本的函数
+        // “许愿”文本的函数
         function setValue() {
             var index = Math.floor(Math.random() * word.length);  // 随机选择一个文本
             var element = document.getElementById("neta");
